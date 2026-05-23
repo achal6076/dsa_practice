@@ -1,0 +1,25 @@
+{
+  "name": "api-rate-limiter",
+  "version": "1.0.0",
+  "description": "Production-ready API rate limiter with Fixed Window, Sliding Window, and Token Bucket algorithms. Supports in-memory and Redis backends.",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "test": "jest tests/",
+    "test:watch": "jest --watch tests/",
+    "demo": "node demo.js"
+  },
+  "keywords": ["rate-limiter", "express", "redis", "token-bucket", "sliding-window", "middleware"],
+  "author": "achal6076",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "ioredis": "^5.10.1"
+  },
+  "devDependencies": {
+    "jest": "^30.4.2",
+    "supertest": "^7.2.2"
+  }
+}
