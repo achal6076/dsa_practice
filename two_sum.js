@@ -1,11 +1,8 @@
 function twoSum(arr, target) {
-    let n = arr.length;
-    for (let i = 0; i < n; i++) {
-        for (let j = i + 1; j < n; j++) {
-            if (arr[i] + arr[j] === target) {
-                return true;
-            }
-        }
+    let seen = new Set();
+    for (let num of arr) {
+        if (seen.has(target - num)) return true;
+        seen.add(num);
     }
     return false;
 }
